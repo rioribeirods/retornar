@@ -1,10 +1,10 @@
-### Olá! Essa é uma simples aplicação que desenvolvi para sortar um trending tópico aleatório do Twitter através da API deles!
+## Olá! Essa é uma simples aplicação que desenvolvi para sortar um trending tópico aleatório do Twitter através da API deles!
 
-## Como funciona?
+### Como funciona?
 
 É bem simples. A aplicação faz uma requisição GET no endpoint da API, eu limitei para os 10 primeiros resultados, em seguida é sorteado um assunto. Após sorteado é criado um arquivo chamado "resultado.txt" com os dizeres "O resultado é: {assunto}"
 
-## Como utilizar?
+### Como utilizar?
 * Abra uma pasta no VSCode e rode os seguintes comandos no terminal:
 ```
 git init
@@ -27,10 +27,10 @@ npm install --save-dev dotenv node express twit
 
 * Agora você precisa criar um arquivo .env e colocar as seguintes informações:
 
-apikey = 
-apikeysecret = 
-accesstoken = 
-accesstokensecret = 
+apikey = \n
+apikeysecret = \n
+accesstoken = \n
+accesstokensecret = \n
 
 * Para conseguir essas chaves, é necessário ter uma conta [Twitter Developer](https://developer.twitter.com/en) com acesso Elevated. Com a conta em mãos basta criar um app e gerar as chaves.
 
