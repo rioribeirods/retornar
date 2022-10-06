@@ -27,10 +27,10 @@ npm install --save-dev dotenv node express twit
 
 * Agora você precisa criar um arquivo .env e colocar as seguintes informações:
 
-apikey = \n
-apikeysecret = \n
-accesstoken = \n
-accesstokensecret = \n
+<p>apikey = </p>
+<p>apikeysecret = </p>
+<p>accesstoken = </p>
+<p>accesstokensecret = </p>
 
 * Para conseguir essas chaves, é necessário ter uma conta [Twitter Developer](https://developer.twitter.com/en) com acesso Elevated. Com a conta em mãos basta criar um app e gerar as chaves.
 
