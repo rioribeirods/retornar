@@ -1,4 +1,4 @@
-## Olá! Essa é uma simples aplicação que desenvolvi para sortar um trending tópico aleatório do Twitter através da API deles!
+## Olá! Essa é uma simples aplicação que desenvolvi para sortar um trending topics aleatório do Twitter através da API deles!
 
 ### Como funciona?
 
@@ -14,9 +14,6 @@ gh repo clone rioribeirods/retornar
 ```
 ```
 cd retornar
-```
-```
-git init
 ```
 ```
 npm init -y
