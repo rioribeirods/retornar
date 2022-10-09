@@ -24,20 +24,10 @@ var T = new Twit({
 app.get("/trends", async (req, res) => {
     await T.get("https://api.twitter.com/1.1/trends/place.json?id=23424768", (error, data, response) => {
         let trends = data[0].trends.slice(0, 10)
-        const sorted = `O resultado é: ${trends[Math.floor(Math.random() * trends.length)].name}\n`
+        const sorted = `O resultado é: ${trends[Math.floor(Math.random() * trends.length)].name}`
 
-        fs.exists('/etc/passwd', (exists) => {
-            console.log({ exists })
-            if (exists) {
-                fs.unlink('./resultado.txt', (err) => {
-
-                });
-            }
-
-            fs.writeFile("./resultado.txt", sorted, { flag: "a" }, (err) => console.log('Arquivo atualizado!', { err }))
-            res.status(200).send()
-
-        });
+        fs.writeFile("./resultado.txt", sorted, (err) => console.log('Arquivo atualizado!', { err }))
+        res.status(200).send()
 
     })
     res.status(500).send()
